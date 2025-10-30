@@ -4,7 +4,7 @@ from requests.auth import HTTPBasicAuth
 # --- CONFIGURATION ---
 WORDPRESS_URL = "https://yourwordpresssite.com" *************
 USERNAME = "Master_Mage"
-APP_PASSWORD = "XXXXXXXXX"  # Generated under User > Profile > Application Passwords
+APP_PASSWORD = "de8c7b30f37955cdb6269f38ad561632a70e725f"
 PDF_PATH = "Dragon_Heist.pdf"
 
 # --- UPLOAD PDF ---
