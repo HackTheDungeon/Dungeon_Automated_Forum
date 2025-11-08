@@ -3,7 +3,7 @@ from requests.auth import HTTPBasicAuth
 
 # --- CONFIGURATION ---
 WORDPRESS_URL = "https://192.168.50.75" *************
-USERNAME = "grandwizzard"
+USERNAME = "lukas.schaefer"
 APP_PASSWORD = "de8c7b30f37955cdb6269f38ad561632a70e725f"
 PDF_PATH = "Dragon_Heist.pdf"
 
