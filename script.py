@@ -1,16 +1,16 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-# --- CONFIGURATION ---
-WORDPRESS_URL = "https://192.168.50.75" *************
+
+WORDPRESS_URL = "https://192.168.50.75"
 USERNAME = "lukas.schaefer"
 APP_PASSWORD = "de8c7b30f37955cdb6269f38ad561632a70e725f"
 PDF_PATH = "Dragon_Heist.pdf"
 
-# --- UPLOAD PDF ---
+
 media_endpoint = f"{WORDPRESS_URL}/wp-json/wp/v2/media"
 
-# Open the file in binary mode
+
 with open(PDF_PATH, 'rb') as pdf_file:
     file_name = PDF_PATH.split('/')[-1]
     headers = {
@@ -25,7 +25,6 @@ with open(PDF_PATH, 'rb') as pdf_file:
         auth=HTTPBasicAuth(USERNAME, APP_PASSWORD)
     )
 
-# --- HANDLE RESPONSE ---
 if response.status_code == 201:
     uploaded = response.json()
     print("PDF uploaded successfully!")
